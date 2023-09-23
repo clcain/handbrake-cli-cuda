@@ -1,10 +1,10 @@
 build:
-	docker build . -t clcain/handbrake-cli-cuda
+	docker build . -t clcain/handbrake-cli
 
 push: build
-	docker push clcain/handbrake-cli-cuda
+	docker push clcain/handbrake-cli
 
 run:
-	docker run --rm -ti --privileged --gpus=all clcain/handbrake-cli-cuda
+	docker run --rm -ti --privileged --gpus=all clcain/handbrake-cli
 
 .PHONY: *
